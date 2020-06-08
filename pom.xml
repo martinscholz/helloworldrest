@@ -11,7 +11,7 @@
 	<groupId>com.martinscholz.cloudexperts</groupId>
 	<artifactId>helloworldrest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>helloworldrest</name>
 	<description>Demo REST HelloWorld for Spring Boot</description>
 
