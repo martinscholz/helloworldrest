@@ -4,10 +4,6 @@ metadata:
   name: root-mapping
   namespace: scholzma
 spec:
-  rules:
-  - http:
-      paths:
-      - path: /
-        backend:
-          serviceName: helloworld
-          servicePort: 8080
+  backend:
+    serviceName: helloworld
+    servicePort: 8080

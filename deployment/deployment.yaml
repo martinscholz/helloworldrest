@@ -1,19 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld-deployment
+  creationTimestamp: null
+  labels:
+    app: helloworld
+  name: helloworld
   namespace: scholzma
 spec:
   replicas: 2
   selector:
     matchLabels:
         app: helloworld
+  strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: helloworld
     spec:
       containers:
-      - name: helloworld-rest-service
-        image: docker.at41tools.k8s.aws.msgoat.eu/cxp/helloworldrest-scholzma:0.0.1
-
+      - image: docker.at41tools.k8s.aws.msgoat.eu/cxp/helloworldrest-scholzma:0.0.1
+        name: helloworld
+        resources: {}
+status: {}
