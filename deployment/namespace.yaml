@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: scholzma
+  labels:
+    app.kubernetes.io/name: scholzma
+    app.kubernetes.io/component: network
+    app.kubernetes.io/part-of: cxp
+    app.kubernetes.io/managed-by: kubectl
